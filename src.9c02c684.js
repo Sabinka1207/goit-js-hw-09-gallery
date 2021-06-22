@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"Focm":[function(require,module,exports) {
 "use strict";var e=require("./js/galleryItems");const t=document.querySelector(".js-gallery"),l=document.querySelector(".js-lightbox"),s=document.querySelector(".lightbox__image"),r=document.querySelector('[data-action="close-lightbox"]'),a=[];function c(e){const t=e.target;console.log("event target: ",t),l.classList.toggle("is-open"),s.src=t.dataset.source}function i(e){e.target;l.classList.toggle("is-open"),s.src=""}e.galleryItems.forEach(e=>{e=`\n<li class="gallery__item">\n<a href="#" class="gallery__link">\n<img src="${e.preview}" data-source="${e.original}" class="gallery__image" alt="${e.description}"></a>\n</li>`,a.push(e)}),t.insertAdjacentHTML("afterbegin",a.join(" ")),t.addEventListener("click",c),r.addEventListener("click",i);
 },{"./js/galleryItems":"tJ5y"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel-project-template/src.9c02c684.js.map
+//# sourceMappingURL=/goit-js-hw-09-gallery/src.9c02c684.js.map
